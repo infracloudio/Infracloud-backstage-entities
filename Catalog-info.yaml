@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: catlog-service
+  description: A simple Node.js service example
+  annotations:
+    sonarqube.org/project-key: anuragpachauri_test-app
+    backstage.io/kubernetes-label-selector: "app.kubernetes.io/name=backstage"
+    backstage.io/kubernetes-namespace: "dev-backstage"
+spec:
+  type: service
+  lifecycle: experimental
+  owner: guests
